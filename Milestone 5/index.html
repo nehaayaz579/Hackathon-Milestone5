@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder</title>
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <img src="images.jpg" alt="profile picture" height="170" align="right" width="180px" >
+    <br>
+    <center><big><h1>Shareable Resume Builder</h1></big></center>
+    <br><br><br><br>
+    <form id="resumeForm">
+    <div class="personal info">    
+        <h2>Personal Information</h2>
+        
+        <label for="picture" class="inputname" id="upload"><strong>Upload Picture</strong></label>
+        <input type="file" id="picture" name="picture" class="forpice" accept="image"><br><br>
+        
+        <label for="name"><strong>Name:</strong></label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <br>
+        <label for="phoneNumber"><strong> Phone Number:</strong></label>
+        <input type="text" id="phoneNumber" name="phoneNumber" required>
+        <br><br>
+        <label for="email"><strong>Email:</strong></label>
+        <input type="text" id="email" name="email" required>
+        <br><br>
+    
+    </div>
+    <br>
+    <div class="education">
+        <h2>Education</h2>
+        <label for="education"><strong>Education:</strong></label>
+        <textarea id="education" name="education" rows="3" required></textarea>
+    </div>
+    <br>
+    <div class="skill">
+        <h2>Skills</h2>
+        <label for="skill"><strong>Skill:</strong></label>
+        <textarea id="skill" name="skill" rows="3" required></textarea>
+    </div>
+    <br><br>
+    <div class="experience">
+        <h2>Experience</h2>
+        <label for="experience"><strong>Work Experience:</strong></label>
+        <textarea id="experience" name="experience" rows="3" required></textarea>
+    </div>
+    <br>
+    <button type="submit">Generate Resume Below</button>
+    
+    </form>
+    <div id="resumeOutput"></div><br><br>
+    <div id="shareable-link-container">
+        <h2>Shareable Link</h2>
+        <p>Here is your shareable link to view or edit your resume.</p>
+        <a href="#" id="Shareable-Link" target="_blank"><b>nehaayaz@gmail.com</b></a><br>
+        <button id="downloadpdf"><b>Download as PDF</b></button>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
